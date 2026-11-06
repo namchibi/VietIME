@@ -1,5 +1,7 @@
 # VietIME
 
+<img src="Icon/AppIcon.png" width="128" alt="VietIME icon">
+
 Bộ gõ tiếng Việt kiểu Telex cho macOS, chạy trên menu bar. Viết bằng Swift thuần, không cần Xcode, không phụ thuộc thư viện ngoài.
 
 ## Tính năng
@@ -61,6 +63,7 @@ log stream --predicate 'subsystem == "dev.local.vietime"'
 | `Sources/VietIME` | App menu bar: bắt phím qua `CGEventTap` (`KeyHandler.swift`), theo dõi app đang mở, từ điển tiếng Anh, Secure Input, menu, onboarding, toast. |
 | `Sources/VietIME/SettingsWindow` | Cửa sổ Cài đặt (SwiftUI) với các tab Chung, Gõ phím, Từ tiếng Anh, Ứng dụng. |
 | `Tests/TelexEngineTests` | Unit test cho engine. |
+| `Icon` | Icon app: ảnh gốc `source.png`; chạy `swift Icon/make-icon.swift` để cắt viền, đặt theo khung icon macOS và tạo lại `AppIcon.png` + `AppIcon.icns`. |
 
 ### Cách hoạt động
 
